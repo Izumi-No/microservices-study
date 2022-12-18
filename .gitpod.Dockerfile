@@ -1,4 +1,5 @@
-FROM gitpod/workspace-base:latest
+FROM gitpod/workspace-full
+
 
 ### Docker ###
 USER root
