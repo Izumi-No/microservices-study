@@ -1,4 +1,12 @@
 {
-    "private": true,
-    "workspaces": ["microservice-one","microservice-two"]
+  "private": true,
+  "workspaces": [
+    "microservice-one",
+    "microservice-two"
+  ],
+  "scripts": {
+    "run:one": "cd microservice-one && node -r @swc-node/register index.ts",
+    "run:two": "cd microservice-two && node -r @swc-node/register index.ts",
+    "run:all": "yarn run:one & yarn run:two"
+  }
 }
